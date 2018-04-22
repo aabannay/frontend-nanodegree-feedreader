@@ -124,11 +124,9 @@ $(function() {
          beforeEach(function(done){
             loadFeed(0, function(){
                 initialFeed = document.querySelector('.feed').textContent;
-                console.log(initialFeed);
             });
             loadFeed(1, function() {
                 afterLoadFeed = document.querySelector('.feed').textContent;
-                console.log(afterLoadFeed);
                 done();
             });
         });
